@@ -1,0 +1,40 @@
+{
+  "name": "my-typeorm-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc ",
+    "postbuild": "cp src/ormconfig.json dist/ormconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "start:build": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.7",
+    "@types/nodemailer": "^6.4.17",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.7",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "handlebars": "^4.7.8",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "pg": "^8.11.2",
+    "reflect-metadata": "^0.1.13",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

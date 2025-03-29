@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Offer Invoice</title>
+</head>
+<body>
+  <h1>Offer Invoice</h1>
+  <p>Invoice Number: #{{offer.id}}</p>
+  <p>Client: {{client.clientName}}</p>
+  <p>Total Amount: ${{offer.totalAmount}}</p>
+  <p>Tasks:</p>
+  <ul>
+    {{#each tasks}}
+      <li>{{this.taskName}} - ${{this.taskPrice}}</li>
+    {{/each}}
+  </ul>
+  <p>Total: ${{offer.totalAmount}}</p>
+</body>
+</html>
